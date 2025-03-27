@@ -1,0 +1,109 @@
+
+html, body {
+    height: 100%; /* Allows later elements to be centered vertically, and lets the later background color to fill the entire screen */
+    width: 100%; /*Same as above, but for horizontal centering */
+    font-family: "Georgia", "Times New Roman", serif; /* Changes the font, my personal preference */
+    display: flex; /* Allows for elements to be aligned */
+    justify-content: center; /* Centers the elements horizontally */
+    align-items: center; /* Centers the elements vertically */
+    padding: 0; /* Removes default padding because they might interfere with my preferences */
+    margin: 0;  /* Same as above */
+}
+
+body {
+    min-height: 100vh; /* Allows later elements to be centered vertically, and lets the later background color to fill the entire screen */
+    width: 100%; /*Same as above, but for horizontal centering */
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    background-color: #1e1e1e;
+    color: #B8860B;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+button {
+    font-family: "Georgia", "Times New Roman", serif; /* Changes the font, my personal preference */
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #2a2a2a;
+    color: #B8860B;
+    border-radius: 15px;
+    margin-top: 25px;
+}
+
+button:hover {
+    background-color: #444444;
+}
+
+#outputContainer {
+    margin: 0;
+}
+
+#output {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-bottom: #2a2a2a 4px solid;
+    font-size: 105px;
+    padding-bottom: 25px;
+    margin: 0;
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 105px;
+}
+
+.left {
+    margin-left: 150px;
+}
+
+.right {
+    margin-right: 150px;
+}
+
+#generateButton {
+    height: 90px;
+    font-size: 60px;
+    padding: 10px;
+    margin-bottom: 150px;
+}
+
+#toggleButton {
+    font-size: 45px;
+    padding: 10px;
+    height: 90px;
+}
+
+.progress-container {
+    display: none;
+    width: 1000px;
+    max-width: 1000px;
+    height: 4px;
+    background-color: #ddd;
+    border-radius: 5px;
+    padding: 0;
+    margin: 0;
+}
+
+#progressBar {
+    width: 0%;
+    height: 100%;
+    background-color: #f4b400;
+    transition: 0.1s linear;
+    border-radius: 5px;
+    padding: 0;
+    margin: 0;
+}
