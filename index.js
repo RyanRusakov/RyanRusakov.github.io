@@ -27,7 +27,7 @@ function* uniqueNoteGenerator() {
 }
 
 function* uniqueAGGenerator() {
-    const notes = ['a', 'e'];
+    const notes = ['a', 'e', 'E'];
     let shuffledNotes = [...notes];
     shuffleArray(shuffledNotes);
     let index = 0;
